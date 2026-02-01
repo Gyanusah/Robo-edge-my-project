@@ -1,6 +1,7 @@
 import { nav } from "framer-motion/client";
 import React, { useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
+import RoboEdge from "../assets/RoboEdge.png";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -9,9 +10,10 @@ function Navbar() {
     <nav className="fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg">
       <div className="container flex justify-between items-center mx-auto">
         <div className=" font-bold text-xl">
-          <a href="#" className="">
+          {/* <a href="#" className="">
             Robo<span className="text-purple">Edge</span>
-          </a>
+          </a> */}
+          <img src={RoboEdge} alt="RoboEdge" />
         </div>
 
         <div>
