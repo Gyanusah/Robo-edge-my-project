@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import RoboEdge from "../assets/RoboEdge logo.jpeg";
+import RoboEdge from "../assets/logo.png";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -13,7 +13,7 @@ function Navbar() {
           {/* <a href="#" className="">
             Robo<span className="text-purple">Edge</span>
           </a> */}
-          <img src={RoboEdge} alt="RoboEdge" />
+          <img  className=" h-20 w-30" src={RoboEdge} alt="RoboEdge" />
         </div>
 
         <div>
