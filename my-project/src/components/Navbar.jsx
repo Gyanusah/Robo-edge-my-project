@@ -1,7 +1,7 @@
-import { nav } from "framer-motion/client";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import RoboEdge from "../assets/RoboEdge.png";
+import RoboEdge from "../assets/RoboEdge logo.jpeg";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -81,11 +81,11 @@ function Navbar() {
             </a>
 
             <a
-              href="#expriences"
+              href="#contact"
               className="relative text-white/80 transition duration-300
            hover:text-purple group"
             >
-              <span></span>
+              <span>Contact</span>
               <span
                 className="absolute
              left-0 -bottom-1 w-0 h-0.5 bg-purple 
@@ -131,7 +131,7 @@ function Navbar() {
       </div>
       {/* mobile menu */}
       {showMenu && (
-        <div className="md:hidden mt-4   ronuded-lg p-4  text-center justify-center">
+        <div className="md:hidden mt-4 rounded-lg p-4 text-center justify-center">
           <div className=" flex flex-col space-y-6 ">
             {/* Add navigation links here if needed */}
 
@@ -176,7 +176,7 @@ function Navbar() {
               href="#expriences"
               className="relative text-white/80 transition duration-300 hover:text-purple group"
             >
-              <span>Exprencie</span>
+              <span>Experience</span>
             </a>
 
             <a
