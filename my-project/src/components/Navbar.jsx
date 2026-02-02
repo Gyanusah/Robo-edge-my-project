@@ -7,13 +7,10 @@ function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg">
-      <div className="container flex justify-between items-center mx-auto">
-        <div className=" font-bold text-xl">
-          {/* <a href="#" className="">
-            Robo<span className="text-purple">Edge</span>
-          </a> */}
-          <img  className=" h-20 w-30" src={RoboEdge} alt="RoboEdge" />
+    <nav className="fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 overflow-hidden shadow-lg">
+      <div className="container flex justify-between items-center  ">
+        <div className=" ">
+          <img className=" h-20 w-30" src={RoboEdge} alt="RoboEdge" />
         </div>
 
         <div>
@@ -36,7 +33,7 @@ function Navbar() {
             </a>
 
             <a
-              href="#about"
+              href="#service"
               className="relative text-white/80 transition duration-300
            hover:text-purple group"
             >
